@@ -1,4 +1,4 @@
-import LogIn from "@/views/LogIn";
+import LoginAndRegister from "@/views/LoginAndRegister";
 import HomePage from "@/views/HomePage";
 import ChatPage from "@/views/ChatPage";
 
@@ -7,14 +7,14 @@ import { createRouter, createWebHistory } from "vue-router";
 const routes = [
   {
     path: "/",
-    component: LogIn,
+    component: LoginAndRegister,
   },
   {
     path: "/home",
     component: HomePage,
   },
   {
-    path: "/chat",
+    path: "/chat/:id",
     component: ChatPage,
   },
 ];

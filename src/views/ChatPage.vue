@@ -6,29 +6,32 @@
       <header
         class="fixed top-0 w-full flex items-center justify-between max-w-3xl rounded-b-full h-16 md:h-24 bg-cyan-100/95 px-8 md:px-12"
       >
-        <div class="2 flex items-center">
-          <button class="mr-3 w-8 h-8 md:w-12 md:h-12">
+        <div class="flex items-center">
+          <button
+            @click="$router.push('/home')"
+            class="mr-3 w-8 h-8 md:w-12 md:h-12"
+          >
             <img
-              src="@/assets/back-svgrepo-com.svg"
+              src="@/assets/back.svg"
               alt=""
               class="w-8 h-8 md:w-12 md:h-12"
             />
           </button>
           <div class="">
-            <span class="text-xl font-bold">Friend_</span>
+            <span class="text-xl font-bold">Friend_{{ $route.params.id }}</span>
           </div>
         </div>
         <div class="flex items-center ml-2">
-          <button class="2 w-7 h-7 md:w-12 md:h-12">
+          <button class="w-7 h-7 md:w-12 md:h-12">
             <img
-              src="@/assets/phone-call-svgrepo-com.svg"
+              src="@/assets/phone-call.svg"
               alt=""
               class="w-7 h-7 md:w-11 md:h-11"
             />
           </button>
           <button class="w-8 h-8 md:w-12 md:h-12 ml-4">
             <img
-              src="@/assets/video-svgrepo-com.svg"
+              src="@/assets/video.svg"
               alt=""
               class="w-8 h-8 md:w-12 md:h-12"
             />
@@ -57,11 +60,11 @@
         <button class="w-8 h-8 md:w-12 md:h-12 mr-2">
           <img
             class="w-8 h-8 md:w-12 md:h-12"
-            src="@/assets/camera-svgrepo-com.svg"
+            src="@/assets/camera.svg"
             alt=""
           />
         </button>
-        <form action="" class="flex w-full items-center h-full">
+        <form @submit.prevent action="" class="flex w-full items-center h-full">
           <input
             type="text"
             placeholder="Message"
@@ -70,14 +73,14 @@
           <button class="w-8 h-8 md:w-12 md:h-12 mx-3">
             <img
               class="w-8 h-8 md:w-12 md:h-12"
-              src="@/assets/voice-svgrepo-com.svg"
+              src="@/assets/voice.svg"
               alt=""
             />
           </button>
           <button class="w-8 h-8 md:w-12 md:h-12">
             <img
               class="w-8 h-8 md:w-12 md:h-12"
-              src="@/assets/send-svgrepo-com.svg"
+              src="@/assets/send.svg"
               alt=""
             />
           </button>
